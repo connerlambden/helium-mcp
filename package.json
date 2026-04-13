@@ -1,0 +1,46 @@
+{
+  "name": "helium-mcp",
+  "version": "1.0.0",
+  "mcpName": "io.github.connerlambden/helium-mcp",
+  "description": "Real-time news with bias scoring, live market data, and AI-powered options pricing. 9 tools across 5000+ news sources and proprietary ML models.",
+  "main": "index.js",
+  "bin": {
+    "helium-mcp": "index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "news",
+    "media-bias",
+    "stocks",
+    "options",
+    "trading",
+    "ai",
+    "claude",
+    "cursor",
+    "market-data",
+    "bias-detection",
+    "memes",
+    "streamable-http"
+  ],
+  "author": "Helium Trades (https://heliumtrades.com)",
+  "license": "MIT",
+  "homepage": "https://heliumtrades.com/mcp-page/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/connerlambden/helium-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/connerlambden/helium-mcp/issues"
+  },
+  "dependencies": {
+    "mcp-remote": "latest"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

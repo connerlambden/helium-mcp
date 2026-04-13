@@ -1,0 +1,11 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "maintainers": [
+    "connerlambden"
+  ],
+  "related_servers": [
+    "ArcadeAI/arcade-finance-mcp",
+    "base-org/mcp",
+    "modelcontextprotocol/servers"
+  ]
+}
