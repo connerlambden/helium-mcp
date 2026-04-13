@@ -107,6 +107,26 @@ get_top_trading_strategies()
   full option pack (strike, expiry, Greeks, ML fair value, probability ITM)
 ```
 
+> "Give me NVIDIA's full analysis"
+
+```
+get_ticker("NVDA")
+→ NVIDIA: $183.91
+  5 probability-weighted scenarios (38% mean-revert, 25% +10-25%, 20% -5-12%...)
+  Forecast: +4.2% over 37 days (range: -2.6% to +8.9%)
+  IV rank, volatility surface, term structure, return profile charts
+  27 time-horizon uncertainty visualizations (1-day to 995-day)
+```
+
+> "Find me stock market crash memes"
+
+```
+search_memes("stock market crash")
+→ Babylon Bee: "Kamala Desperately Googles 'What Is A Stock Market Crash'" (32K likes)
+→ "Everyone: 'omg the stock market is crashing!' / 500 cigarettes adapter" (437K likes)
+  Full OCR text, source, date, image URLs included
+```
+
 ## Tools
 
 ### search_news
