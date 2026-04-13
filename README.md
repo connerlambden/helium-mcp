@@ -51,12 +51,60 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
 }
 ```
 
+### Windsurf
+
+Add to your Windsurf MCP settings:
+
+```json
+{
+  "mcpServers": {
+    "helium": {
+      "serverUrl": "https://heliumtrades.com/mcp"
+    }
+  }
+}
+```
+
 ### Any MCP Client
 
 Connect to the streamable HTTP endpoint:
 
 ```
 https://heliumtrades.com/mcp
+```
+
+## Example Output
+
+> "What's the bull and bear case for Bitcoin?"
+
+```
+get_ticker("BTC")
+→ Bitcoin: $71,040.01
+  Bull case: "Institutional spot demand resumes... squeeze toward mid/upper-80ks to low-100ks"
+  Bear case: "Higher-for-longer rates, persistent ETF outflows... slide into 40–55k plausible"
+  Forecast: +1.8% over 37 days (range: -1.2% to +5.0%)
+  IV Rank: available
+  Options strategies: long vol + short vol packs included
+```
+
+> "How biased is CNN?"
+
+```
+get_source_bias("CNN")
+→ Emotionality: 7/10
+  30+ bias dimensions scored (political lean, fearfulness, opinion, oversimplification...)
+  Signature phrases: "trump threatens", "mortgage rates", "nuclear weapons"
+  Similar sources: NBC, PBS, AP, Newsweek, CBS
+  Per-article bias breakdown on recent stories included
+```
+
+> "What are the best options trades right now?"
+
+```
+get_top_trading_strategies()
+→ AI-ranked short vol + long vol setups
+  Each includes: ticker, price, bull/bear case, 5 probability-weighted outcomes,
+  full option pack (strike, expiry, Greeks, ML fair value, probability ITM)
 ```
 
 ## Tools
