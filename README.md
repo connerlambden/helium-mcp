@@ -65,6 +65,21 @@ Add to your Windsurf MCP settings:
 }
 ```
 
+### GitHub Copilot
+
+Add to your `.github/copilot-instructions.md` or MCP config:
+
+```json
+{
+  "mcpServers": {
+    "helium": {
+      "type": "streamable-http",
+      "url": "https://heliumtrades.com/mcp"
+    }
+  }
+}
+```
+
 ### Any MCP Client
 
 Connect to the streamable HTTP endpoint:
@@ -242,6 +257,9 @@ Get an API key at [heliumtrades.com/mcp-page](https://heliumtrades.com/mcp-page)
 ## Links
 
 - [Helium MCP Page](https://heliumtrades.com/mcp-page/)
+- [Glama](https://glama.ai/mcp/servers/connerlambden/helium-mcp)
+- [Smithery](https://smithery.ai/servers/conner-m4el/helium-mcp)
+- [npm](https://www.npmjs.com/package/helium-mcp)
 - [Helium Trades](https://heliumtrades.com)
 - [Privacy Policy](https://heliumtrades.com/pp/)
 
