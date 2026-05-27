@@ -254,14 +254,16 @@ Semantic search across viral memes — images, captions, OCR text, like counts, 
 
 Get an API key at [heliumtrades.com/mcp-page](https://heliumtrades.com/mcp-page).
 
-## Examples & Recipes
+## Examples, Recipes & Interactive Demo
 
-Want to see each endpoint used in real Python workflows? The [`helium-mcp-cookbook`](https://github.com/connerlambden/helium-mcp-cookbook) repo contains six short, runnable recipes covering news-bias ranking, options calibration tracking, balanced-news synthesis, source credibility ranking, ticker forecasts, and top-strategies. Each is a single file you can run with `python recipes/NN_name.py`.
+- **[Helium News Bias Explorer](https://connerlambden.github.io/helium-news-explorer/)** — interactive single-page demo (zero dependencies) that fetches the live source-bias corpus and lets you rank, scatter, or inspect any of the 216 sources across all 37 bias dimensions. The fastest way to feel what the API can do without writing code.
+- **[helium-mcp-cookbook](https://github.com/connerlambden/helium-mcp-cookbook)** — seven runnable Python recipes covering news-bias ranking, options calibration tracking, balanced-news synthesis, source credibility ranking, ticker forecasts, top-strategies, and meme search. Each is one file you can run with `python recipes/NN_name.py`.
 
 ## Links
 
 - [Helium MCP Page](https://heliumtrades.com/mcp-page/)
-- [helium-mcp-cookbook](https://github.com/connerlambden/helium-mcp-cookbook) — six runnable Python recipes
+- [Helium News Bias Explorer](https://connerlambden.github.io/helium-news-explorer/) — live interactive demo
+- [helium-mcp-cookbook](https://github.com/connerlambden/helium-mcp-cookbook) — seven runnable Python recipes
 - [Glama](https://glama.ai/mcp/servers/connerlambden/helium-mcp)
 - [Smithery](https://smithery.ai/servers/conner-m4el/helium-mcp)
 - [npm](https://www.npmjs.com/package/helium-mcp)
