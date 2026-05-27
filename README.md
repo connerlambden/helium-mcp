@@ -257,12 +257,14 @@ Get an API key at [heliumtrades.com/mcp-page](https://heliumtrades.com/mcp-page)
 ## Examples, Recipes & Interactive Demo
 
 - **[Helium News Bias Explorer](https://connerlambden.github.io/helium-news-explorer/)** — interactive single-page demo (zero dependencies) that fetches the live source-bias corpus and lets you rank, scatter, or inspect any of the 216 sources across all 37 bias dimensions. The fastest way to feel what the API can do without writing code.
+- **[Helium Ticker Forecast Dashboard](https://connerlambden.github.io/helium-news-explorer/tickers.html)** — companion dashboard that renders the top 10 short-vol and long-vol candidates with ML 37-day forecasts, uncertainty cones, and bull/bear narratives. Single GET to `mcp_top_strategies/`.
 - **[helium-mcp-cookbook](https://github.com/connerlambden/helium-mcp-cookbook)** — seven runnable Python recipes covering news-bias ranking, options calibration tracking, balanced-news synthesis, source credibility ranking, ticker forecasts, top-strategies, and meme search. Each is one file you can run with `python recipes/NN_name.py`.
 
 ## Links
 
 - [Helium MCP Page](https://heliumtrades.com/mcp-page/)
-- [Helium News Bias Explorer](https://connerlambden.github.io/helium-news-explorer/) — live interactive demo
+- [Helium News Bias Explorer](https://connerlambden.github.io/helium-news-explorer/) — live interactive demo (news side)
+- [Helium Ticker Forecast Dashboard](https://connerlambden.github.io/helium-news-explorer/tickers.html) — live interactive demo (markets side)
 - [helium-mcp-cookbook](https://github.com/connerlambden/helium-mcp-cookbook) — seven runnable Python recipes
 - [Glama](https://glama.ai/mcp/servers/connerlambden/helium-mcp)
 - [Smithery](https://smithery.ai/servers/conner-m4el/helium-mcp)
