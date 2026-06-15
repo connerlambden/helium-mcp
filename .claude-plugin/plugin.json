@@ -1,0 +1,11 @@
+{
+  "name": "helium-mcp",
+  "version": "1.0.0",
+  "description": "Remote MCP server for news bias (37 dimensions), live market data, and ML options pricing.",
+  "repository": "https://github.com/connerlambden/helium-mcp",
+  "mcpServers": {
+    "helium": {
+      "url": "https://heliumtrades.com/mcp"
+    }
+  }
+}

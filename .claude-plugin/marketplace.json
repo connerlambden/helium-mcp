@@ -1,0 +1,16 @@
+{
+  "name": "helium-mcp",
+  "version": "1.0.0",
+  "description": "News bias, market data, and ML options pricing via remote MCP.",
+  "repository": "https://github.com/connerlambden/helium-mcp",
+  "owner": {
+    "name": "Conner Lambden"
+  },
+  "plugins": [
+    {
+      "name": "helium-mcp",
+      "source": "./",
+      "description": "Remote MCP: 37-dimension news bias across 216 sources, ticker forecasts, and ML option fair values. Free tier, no API key for first 50 calls."
+    }
+  ]
+}
