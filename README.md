@@ -266,6 +266,7 @@ Get an API key at [heliumtrades.com/mcp-page](https://heliumtrades.com/mcp-page)
 - [Helium News Bias Explorer](https://connerlambden.github.io/helium-news-explorer/) — live interactive demo (news side)
 - [Helium Ticker Forecast Dashboard](https://connerlambden.github.io/helium-news-explorer/tickers.html) — live interactive demo (markets side)
 - [helium-mcp-cookbook](https://github.com/connerlambden/helium-mcp-cookbook) — seven runnable Python recipes
+- [BGPT MCP](https://github.com/connerlambden/bgpt-mcp) — sibling MCP for structured scientific paper search ([docs](https://bgpt.pro/mcp/))
 - [Glama](https://glama.ai/mcp/servers/connerlambden/helium-mcp)
 - [Smithery](https://smithery.ai/servers/conner-m4el/helium-mcp)
 - [npm](https://www.npmjs.com/package/helium-mcp)
