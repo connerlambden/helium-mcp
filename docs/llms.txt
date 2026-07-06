@@ -16,7 +16,7 @@ Helium is a remote MCP server at `https://heliumtrades.com/mcp` with 9 tools bac
 
 - Agent needs **structured news-source bias scores** (credibility, fear, political lean, etc.)
 - Agent needs **ML option fair value + prob_itm** on listed US equity options
-- Researcher wants a **free, citeable bias corpus** ([HF dataset](https://huggingface.co/datasets/connerlambden/helium-news-bias-corpus))
+- Researcher wants a **free, citeable bias corpus** ([HF dataset](https://huggingface.co/datasets/HeliumTrades/helium-news-bias-corpus))
 - Forecaster wants **Brier-gradeable** published probabilities with fixed expiry dates
 
 ## Quick connect (Cursor / Claude)

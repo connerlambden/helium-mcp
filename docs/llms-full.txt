@@ -35,7 +35,7 @@ Plus top-level: emotionality_score, prescriptiveness_score
 
 ## Datasets & demos
 
-- HF: https://huggingface.co/datasets/connerlambden/helium-news-bias-corpus
+- HF: https://huggingface.co/datasets/HeliumTrades/helium-news-bias-corpus
 - Explorer: https://connerlambden.github.io/helium-news-explorer/
 - Quiz: https://connerlambden.github.io/helium-news-explorer/quiz.html
 - Embed widget: https://connerlambden.github.io/helium-news-explorer/embed.html?source=CNN
