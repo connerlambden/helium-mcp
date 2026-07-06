@@ -258,7 +258,12 @@ Get an API key at [heliumtrades.com/mcp-page](https://heliumtrades.com/mcp-page)
 
 - **[Helium News Bias Explorer](https://connerlambden.github.io/helium-news-explorer/)** — interactive single-page demo (zero dependencies) that fetches the live source-bias corpus and lets you rank, scatter, or inspect any of the 216 sources across all 37 bias dimensions. The fastest way to feel what the API can do without writing code.
 - **[Helium Ticker Forecast Dashboard](https://connerlambden.github.io/helium-news-explorer/tickers.html)** — companion dashboard that renders the top 10 short-vol and long-vol candidates with ML 37-day forecasts, uncertainty cones, and bull/bear narratives. Single GET to `mcp_top_strategies/`.
-- **[helium-mcp-cookbook](https://github.com/connerlambden/helium-mcp-cookbook)** — seven runnable Python recipes covering news-bias ranking, options calibration tracking, balanced-news synthesis, source credibility ranking, ticker forecasts, top-strategies, and meme search. Each is one file you can run with `python recipes/NN_name.py`.
+- **[Forecaster Honesty Board](https://connerlambden.github.io/helium-news-explorer/calibration.html)** — post-hoc Brier grades for published `prob_itm` forecasts.
+- **[helium-mcp-cookbook](https://github.com/connerlambden/helium-mcp-cookbook)** — eight runnable Python recipes, calibration scorecard, and a citeable bias-corpus dataset snapshot.
+
+## AI discoverability (`llms.txt`)
+
+Machine-readable index for LLM crawlers: [`docs/llms.txt`](docs/llms.txt) and [`docs/llms-full.txt`](docs/llms-full.txt). Deploy copies at `https://heliumtrades.com/llms.txt`. Schema.org snippet for mcp-page: [`docs/mcp-page-schema-snippet.html`](docs/mcp-page-schema-snippet.html).
 
 ## Links
 

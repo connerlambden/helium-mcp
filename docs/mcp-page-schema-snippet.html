@@ -1,0 +1,49 @@
+<!--
+  Deploy snippet at https://heliumtrades.com/mcp-page/ (inside <head>).
+  Also host /llms.txt and /llms-full.txt from docs/ at site root.
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "Helium MCP Server",
+      "applicationCategory": "DeveloperApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "url": "https://heliumtrades.com/mcp-page/",
+      "downloadUrl": "https://github.com/connerlambden/helium-mcp",
+      "softwareVersion": "1.0.1",
+      "description": "Remote MCP server for news bias scoring (37 dimensions) and ML options pricing with prob_itm forecasts.",
+      "featureList": [
+        "37-dimension news source bias corpus",
+        "ML option fair value and prob_itm",
+        "Balanced news search with probability-weighted outcomes",
+        "Streamable HTTP MCP transport"
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "Helium News Bias Corpus Snapshot",
+      "description": "Structured bias scores for 200+ news outlets across 37 dimensions.",
+      "url": "https://huggingface.co/datasets/connerlambden/helium-news-bias-corpus",
+      "creator": {
+        "@type": "Organization",
+        "name": "Helium Trades",
+        "url": "https://heliumtrades.com"
+      },
+      "license": "https://opensource.org/licenses/MIT",
+      "distribution": {
+        "@type": "DataDownload",
+        "contentUrl": "https://huggingface.co/datasets/connerlambden/helium-news-bias-corpus",
+        "encodingFormat": "application/json"
+      }
+    }
+  ]
+}
+</script>

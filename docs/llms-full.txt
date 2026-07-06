@@ -1,0 +1,59 @@
+# Helium MCP — full reference (llms-full.txt)
+
+## Server
+
+- Transport: Streamable HTTP MCP at `https://heliumtrades.com/mcp`
+- Auth: none on free tier (50 requests/IP/day for REST; MCP may share limits)
+- Website: https://heliumtrades.com/mcp-page/
+- npm bridge: `npx mcp-remote https://heliumtrades.com/mcp`
+
+## Tools (9)
+
+| Tool | REST | Purpose |
+|------|------|---------|
+| get_all_source_biases | GET /mcp_all_source_biases/ | Full news bias corpus |
+| get_source_bias | GET /mcp_source_bias/?source= | Single outlet profile |
+| get_url_bias | GET /mcp_url_bias/?url= | Score an article URL |
+| get_balanced_search | GET /mcp_balanced_search/?q= | Probability-weighted news synthesis |
+| get_ticker | GET /mcp_ticker/?ticker= | ML price forecast + narratives |
+| get_option_price | GET /mcp_option_price/?symbol=&strike=&expiration=&option_type= | ML fair value + prob_itm |
+| get_top_trading_strategies | GET /mcp_top_strategies/ | Short/long vol candidate lists |
+| search_memes | GET /mcp_meme_search/?q= | Meme corpus semantic search |
+| get_meme | GET /mcp_meme/?id= | Single meme record |
+
+## Bias dimensions (37 in bias_values)
+
+overall credibility, fearful bias, liberal conservative bias, political bias, opinion bias, oversimplification bias, appeal to authority bias, integrity bias, establishment bias, cruelty bias, scapegoat bias, conspiracy bias, ideological bias, victimization bias, virtue signal bias, woke bias, libertarian authoritarian bias, dovish hawkish bias, gossip bias, overconfidence bias, objective sensational bias, objective subjective bias, descriptive prescriptive bias, immature bias, bearish bullish bias, covering the response bias, article intelligence, begging the question bias, spam bias, delusion bias, double standard bias, terrorism bias, circular reasoning bias, written by AI, suicidal empathy bias
+
+Plus top-level: emotionality_score, prescriptiveness_score
+
+## Options outputs
+
+- predicted_price: model fair value
+- prob_itm: P(finish in-the-money) at expiration — Brier-gradeable when expiry resolves
+- options_data_date: as-of date for the model snapshot
+
+## Datasets & demos
+
+- HF: https://huggingface.co/datasets/connerlambden/helium-news-bias-corpus
+- Explorer: https://connerlambden.github.io/helium-news-explorer/
+- Quiz: https://connerlambden.github.io/helium-news-explorer/quiz.html
+- Embed widget: https://connerlambden.github.io/helium-news-explorer/embed.html?source=CNN
+- Cookbook: https://github.com/connerlambden/helium-mcp-cookbook
+- Calibration: https://github.com/connerlambden/helium-mcp-cookbook/tree/main/calibration
+
+## LangChain
+
+```python
+from langchain_community.tools.helium import HeliumNewsBiasTool
+tool = HeliumNewsBiasTool()
+tool.invoke({"source": "CNN"})
+```
+
+## Citation
+
+Helium Trades MCP Server — https://github.com/connerlambden/helium-mcp
+
+## Contact
+
+contact@heliumtrades.com

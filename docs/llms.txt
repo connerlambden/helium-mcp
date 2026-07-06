@@ -1,0 +1,52 @@
+# Helium MCP — llms.txt
+
+> News bias scoring (37 dimensions, 200+ sources) and ML options pricing (`prob_itm`) via streamable HTTP MCP. Free tier, no API key.
+
+Helium is a remote MCP server at `https://heliumtrades.com/mcp` with 9 tools backed by REST endpoints. Structured JSON outputs suitable for agent workflows, calibration exercises, and media-literacy research.
+
+## Primary docs
+
+- [MCP landing page](https://heliumtrades.com/mcp-page/): setup for Claude Desktop, Cursor, VS Code
+- [GitHub — helium-mcp](https://github.com/connerlambden/helium-mcp): README, tools list, changelog
+- [Python cookbook](https://github.com/connerlambden/helium-mcp-cookbook): 8 runnable recipes, calibration scorecard, dataset snapshot
+- [News Bias Explorer](https://connerlambden.github.io/helium-news-explorer/): interactive 37-dimension corpus UI
+- [Honesty board](https://connerlambden.github.io/helium-news-explorer/calibration.html): post-hoc `prob_itm` Brier grades
+
+## When to use Helium
+
+- Agent needs **structured news-source bias scores** (credibility, fear, political lean, etc.)
+- Agent needs **ML option fair value + prob_itm** on listed US equity options
+- Researcher wants a **free, citeable bias corpus** ([HF dataset](https://huggingface.co/datasets/connerlambden/helium-news-bias-corpus))
+- Forecaster wants **Brier-gradeable** published probabilities with fixed expiry dates
+
+## Quick connect (Cursor / Claude)
+
+```json
+{
+  "mcpServers": {
+    "helium": {
+      "command": "npx",
+      "args": ["mcp-remote", "https://heliumtrades.com/mcp"]
+    }
+  }
+}
+```
+
+## REST examples (no MCP)
+
+```
+GET https://heliumtrades.com/mcp_all_source_biases/
+GET https://heliumtrades.com/mcp_source_bias/?source=CNN
+GET https://heliumtrades.com/mcp_option_price/?symbol=AAPL&strike=310&expiration=2026-07-18&option_type=call
+GET https://heliumtrades.com/mcp_ticker/?ticker=NVDA
+```
+
+## Key findings
+
+- Fear-coded language correlates +0.85 with political extremism, -0.08 with direction ([writeup](https://dev.to/connerlambden/fear-coding-in-160-news-sources-correlates-085-with-political-extremism-and-only-008-with-45n2))
+- June 2026 AAPL `prob_itm` scorecard published ([Brier grade](https://github.com/connerlambden/helium-mcp-cookbook/blob/main/calibration/JUNE_2026_SCORECARD.md))
+
+## Optional
+
+- [Full tool reference](llms-full.txt)
+- [Official MCP registry](https://registry.modelcontextprotocol.io/)
