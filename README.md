@@ -5,6 +5,7 @@ Real-time news with bias scoring, live market data, and AI-powered options prici
 [![helium-mcp MCP server](https://glama.ai/mcp/servers/connerlambden/helium-mcp/badges/card.svg)](https://glama.ai/mcp/servers/connerlambden/helium-mcp)
 
 [![MCP Score](https://glama.ai/mcp/servers/connerlambden/helium-mcp/badges/score.svg)](https://glama.ai/mcp/servers/connerlambden/helium-mcp)
+[![MCP Queen grade](https://mcpqueen.com/badge/io.github.connerlambden/helium-mcp.svg)](https://mcpqueen.com/s/io.github.connerlambden/helium-mcp)
 [![npm version](https://img.shields.io/npm/v/helium-mcp)](https://www.npmjs.com/package/helium-mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
